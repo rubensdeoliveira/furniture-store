@@ -1,0 +1,22 @@
+{
+  "name": "furniture-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/shared/*"
+    ],
+    "nohoist": [
+      "**/jest",
+      "**/ts-jest"
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.5",
+    "@furniture-store/eslint-config": "*",
+    "git-commit-msg-linter": "^3.0.0"
+  }
+}
