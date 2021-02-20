@@ -28,17 +28,9 @@ module.exports = {
     'prettier/prettier': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/prop-types': 'off',
-    'camelcase': 'off',
-    'no-useless-constructor': 'off',
-    'no-unused-expressions': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/ban-types': 'off',
-    'react/no-children-prop': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'off',
-    'react/display-name': 'off'
+    'react/react-in-jsx-scope': 'off'
   },
   settings: {
     'import/resolver': {
