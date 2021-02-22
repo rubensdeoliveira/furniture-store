@@ -2,42 +2,35 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
-    node: true,
-    jest: true
+    jest: true,
+    node: true
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
-    'standard',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'prettier/standard',
-    'prettier/react',
-    'plugin:prettier/recommended',
-    'plugin:react-hooks/recommended'
+    'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      'jsx': true
     },
-    ecmaVersion: 12,
+    ecmaVersion: 11,
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint', 'prettier', 'react-hooks'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint'],
   rules: {
-    'prettier/prettier': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'react/prop-types': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'react/react-in-jsx-scope': 'off'
-  },
-  settings: {
-    'import/resolver': {
-      typescript: {}
-    },
-    react: {
-      version: 'detect',
-    },
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   }
 }
