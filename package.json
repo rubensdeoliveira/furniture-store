@@ -10,13 +10,20 @@
     ],
     "nohoist": [
       "**/jest",
-      "**/ts-jest"
+      "**/ts-jest",
+      "**/strapi-admin",
+      "**/strapi-admin/**",
+      "**/strapi",
+      "**/strapi/**",
+      "**/strapi-plugin-content-manager",
+      "**/strapi-plugin-content-manager/**"
     ]
   },
   "license": "MIT",
   "devDependencies": {
     "@furniture-store/eslint-config": "*",
     "git-commit-msg-linter": "^3.0.0",
-    "typescript": "^4.1.5"
+    "typescript": "^4.1.5",
+    "koa": "2.13.1"
   }
 }
